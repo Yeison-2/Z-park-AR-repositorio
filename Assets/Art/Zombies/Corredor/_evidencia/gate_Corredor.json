@@ -1,0 +1,198 @@
+{
+ "modelo": "Corredor",
+ "estado": "PASS",
+ "fallos": 0,
+ "total": 38,
+ "checks": [
+  {
+   "check": "solo mesh + armature en el FBX",
+   "ok": true,
+   "detalle": "mesh=1 arm=1 otros=0"
+  },
+  {
+   "check": "2. altura 1.70-1.80 m",
+   "ok": true,
+   "detalle": "1.750 m"
+  },
+  {
+   "check": "2. pivote entre los pies a ras de suelo",
+   "ok": true,
+   "detalle": "z_min=-0.0000"
+  },
+  {
+   "check": "2. mira hacia -Y",
+   "ok": true,
+   "detalle": "centroide Y cabeza=-0.201"
+  },
+  {
+   "check": "3. 3.000-8.000 triangulos",
+   "ok": true,
+   "detalle": "7571"
+  },
+  {
+   "check": "3. un solo mesh",
+   "ok": true,
+   "detalle": "n=1"
+  },
+  {
+   "check": "3. un solo material",
+   "ok": true,
+   "detalle": "n=1"
+  },
+  {
+   "check": "3. sin modificadores salvo Armature",
+   "ok": true,
+   "detalle": "[('Corredor_Rig', 'ARMATURE')]"
+  },
+  {
+   "check": "4. Principled BSDF con Base Color desde textura",
+   "ok": true,
+   "detalle": "1"
+  },
+  {
+   "check": "4. una sola textura en el material",
+   "ok": true,
+   "detalle": "n=1"
+  },
+  {
+   "check": "4. textura 1024x1024 (max 2048)",
+   "ok": true,
+   "detalle": "1024x1024"
+  },
+  {
+   "check": "4. identidad de color naranja",
+   "ok": true,
+   "detalle": "tono=18"
+  },
+  {
+   "check": "5. los 19 huesos con nombre exacto estan todos",
+   "ok": true,
+   "detalle": "faltan=[]"
+  },
+  {
+   "check": "5. solo huesos extra tipo hoja (_end) y sin pesos",
+   "ok": true,
+   "detalle": "['Foot.L_end', 'Foot.R_end', 'Hand.L_end', 'Hand.R_end', 'Head_end']"
+  },
+  {
+   "check": "5. jerarquia del esqueleto correcta",
+   "ok": true,
+   "detalle": ""
+  },
+  {
+   "check": "5. hueso Hand.L va por dentro de la mano",
+   "ok": true,
+   "detalle": "cabeza=0.027 medio=0.023 cola=0.025"
+  },
+  {
+   "check": "5. hueso Hand.R va por dentro de la mano",
+   "ok": true,
+   "detalle": "cabeza=0.027 medio=0.023 cola=0.025"
+  },
+  {
+   "check": "5. las Actions pedidas existen con nombre exacto",
+   "ok": true,
+   "detalle": "tiene=['Atacar', 'Caminar', 'Correr', 'Morir', 'Quieto']"
+  },
+  {
+   "check": "5. Atacar 0.5-1 s",
+   "ok": true,
+   "detalle": "0.750 s"
+  },
+  {
+   "check": "5. Atacar numero de frames",
+   "ok": true,
+   "detalle": "19"
+  },
+  {
+   "check": "5. Atacar in place (sin desplazamiento)",
+   "ok": true,
+   "detalle": "deriva=0.0000 m"
+  },
+  {
+   "check": "5. Atacar sin deformacion visible (0 aristas >2x)",
+   "ok": true,
+   "detalle": "max=1.65 p99=1.26 aristas>2x=0"
+  },
+  {
+   "check": "5. Caminar numero de frames",
+   "ok": true,
+   "detalle": "25"
+  },
+  {
+   "check": "5. Caminar in place (sin desplazamiento)",
+   "ok": true,
+   "detalle": "deriva=0.0000 m"
+  },
+  {
+   "check": "5. Caminar sin deformacion visible (0 aristas >2x)",
+   "ok": true,
+   "detalle": "max=1.58 p99=1.16 aristas>2x=0"
+  },
+  {
+   "check": "5. Caminar bucle perfecto (primer frame = ultimo)",
+   "ok": true,
+   "detalle": "error=0.000000 m"
+  },
+  {
+   "check": "5. Correr numero de frames",
+   "ok": true,
+   "detalle": "17"
+  },
+  {
+   "check": "5. Correr in place (sin desplazamiento)",
+   "ok": true,
+   "detalle": "deriva=0.0000 m"
+  },
+  {
+   "check": "5. Correr sin deformacion visible (0 aristas >2x)",
+   "ok": true,
+   "detalle": "max=1.88 p99=1.25 aristas>2x=0"
+  },
+  {
+   "check": "5. Correr bucle perfecto (primer frame = ultimo)",
+   "ok": true,
+   "detalle": "error=0.000000 m"
+  },
+  {
+   "check": "5. Morir 1-2 s",
+   "ok": true,
+   "detalle": "1.500 s"
+  },
+  {
+   "check": "5. Morir numero de frames",
+   "ok": true,
+   "detalle": "37"
+  },
+  {
+   "check": "5. Morir in place (sin desplazamiento)",
+   "ok": true,
+   "detalle": "deriva=0.0000 m"
+  },
+  {
+   "check": "5. Morir sin deformacion visible (0 aristas >2x)",
+   "ok": true,
+   "detalle": "max=1.74 p99=1.29 aristas>2x=0"
+  },
+  {
+   "check": "5. Quieto numero de frames",
+   "ok": true,
+   "detalle": "49"
+  },
+  {
+   "check": "5. Quieto in place (sin desplazamiento)",
+   "ok": true,
+   "detalle": "deriva=0.0000 m"
+  },
+  {
+   "check": "5. Quieto sin deformacion visible (0 aristas >2x)",
+   "ok": true,
+   "detalle": "max=1.31 p99=1.12 aristas>2x=0"
+  },
+  {
+   "check": "5. Quieto bucle perfecto (primer frame = ultimo)",
+   "ok": true,
+   "detalle": "error=0.000000 m"
+  }
+ ]
+}
